@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plan Estratégico de Juárez</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Contenedor centralizado */
+        .container {
+            width: 960px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Ajuste de la galería de programas */
+        .programas-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            flex-wrap: wrap;
+            align-items: flex-start;
+        }
+
+        .programa {
+            text-align: center;
+            width: 250px;
+        }
+
+        .programa img {
+            width: 100%;
+            height: auto;
+            cursor: pointer;
+        }
+
+        #programas h2 {
+            text-align: center;
+        }
+
+        #asi-estamos-juarez-info {
+            padding: 20px;
+            background-color: #f9f9f9;
+            margin-top: 20px;
+            border-radius: 8px;
+            text-align: justify;
+        }
+
+        #asi-estamos-juarez-info h2 {
+            text-align: center;
+        }
+
+        #asi-estamos-juarez-info p {
+            margin-bottom: 10px;
+        }
+
+        .image-popup {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+        }
+
+        .image-popup img {
+            max-width: 90%;
+            max-height: 90%;
+        }
+
+        .close-btn {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 2em;
+            color: white;
+            cursor: pointer;
+            background-color: transparent;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <img src="https://planjuarez.org/wp-content/uploads/2020/09/logotipo.png.webp" alt="Logotipo Plan Estratégico de Juárez" width="300" height="auto">
+            <div>
+                <h1>Plan Estratégico de Juárez</h1>
+                <p>Construyendo un futuro para todos.</p>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#programas">Programas</a></li>
+                <li><a href="#galeria">Galería</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="portada" class="container">
+    <h2>Sobre Nosotros</h2>
+    <div style="border: 2px solid #000; padding: 20px; border-radius: 8px; font-family: 'Arial', sans-serif; font-size: 22px; line-height: 1.6; color: #333; background-color: #f4f4f4;">
+        <p>Es una organización civil sin fines de lucro que trabaja en Ciudad Juárez, Chihuahua, México, enfocada en promover el desarrollo y el bienestar social de la ciudad mediante la participación ciudadana, la transparencia, y la rendición de cuentas de las instituciones públicas. Su misión principal es mejorar la calidad de vida de los habitantes de Ciudad Juárez impulsando cambios positivos en la gobernanza local y apoyando iniciativas que permitan un desarrollo sostenible.</p>
+    </div>
+            <h2>Plan Estratégico de Juárez</h2>
+            <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FWikipoliticaChih%2Fvideos%2F2063699143896816%2F&show_text=false&width=560&t=0" width="560" height="314" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+        </section>
+
+        <section id="programas" class="container">
+            <h2>Nuestros Programas</h2>
+            <div class="programas-container">
+                <div class="programa">
+                    <img src="https://planjuarez.org/wp-content/uploads/2021/02/aej_proyecto.png.webp" alt="Proyecto AEJ" onclick="openImage(this.src)" width="300" height="200">
+                    <h3><a href="Sub paginas/asiestamosjuarez.html">En Así Estamos Juárez</a></h3>
+                    <p>La calidad de vida en Ciudad Juárez.</p>
+                </div>
+                <div class="programa">
+                    <img src="https://planjuarez.org/wp-content/uploads/2021/02/yc_proyecto.png.webp" alt="Proyecto YC" onclick="openImage(this.src)" width="300" height="200">
+                    <h3><a href="Sub paginas/Investigación y análisis ciudadano.html">Investigación y análisis ciudadano</a></h3>
+                    <p>Grupo de juarenses comprometidos con generar la información.</p>
+                </div>
+                <div class="programa">
+                    <img src="https://planjuarez.org/wp-content/uploads/2021/02/juarez2030_proyecto.png.webp" alt="Proyecto Juárez 2030" onclick="openImage(this.src)" width="300" height="200">
+                    <h3><a href="Sub paginas/asiestamosjuarez.html">Juárez 2030</a></h3>
+                    <p>Plan por una ciudad sostenible basado en los Objetivos de Desarrollo Sostenible</p>
+                </div>
+            </div>
+
+            <div class="programas-container">
+                <div class="programa">
+                    <img src="https://planjuarez.org/wp-content/uploads/2021/02/aej_proyecto.png.webp" alt="Así estamos en Juárez" onclick="openImage(this.src)" width="300" height="200">
+                    <h3><a href="Sub paginas/Así estamos en Juárez.html">Así estamos en Juárez</a></h3>
+                    <p>Calidad de vida en Ciudad Juárez.</p>
+                </div>
+                <div class="programa">
+                    <img src="https://planjuarez.org/wp-content/uploads/2021/02/rmx_proyecto.png.webp" alt="Proyecto RMX" onclick="openImage(this.src)" style="width: 300px; height: 200px; object-fit: cover;">
+                    <h3><a href="Sub paginas/RegidorMX.html">RegidorMX</a></h3>
+                    <p>Plan Estratégico de Juárez.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="galeria" class="container">
+            <h2>Galería</h2>
+            <div class="galeria-container">
+                <img src="Imagenes/galeria1.jpg" alt="Galería 1" onclick="openImage(this.src)" width="300" height="200">
+                <img src="Imagenes/galeria2.jpg" alt="Galería 2" onclick="openImage(this.src)" width="300" height="200">
+                <img src="Imagenes/galeria3.jpg" alt="Galería 3" onclick="openImage(this.src)" width="300" height="200">
+                <img src="Imagenes/galeria4.jpg" alt="Galería 4" onclick="openImage(this.src)" width="300" height="200">
+                <img src="Imagenes/galeria5.jpg" alt="Galería 5" onclick="openImage(this.src)" width="300" height="200">
+                <img src="Imagenes/galeria6.jpg" alt="Galería 6" onclick="openImage(this.src)" width="300" height="200">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <section id="contacto" style="background-color: #000; color: #fff; padding: 20px; text-align: center;">
+            <h2>Contacto</h2>
+            <div class="container">
+                <div style="margin-bottom: 10px;">
+                    <p><strong>Teléfonos:</strong></p>
+                    <p>+52 (656) 123 4567</p>
+                    <p>+52 (656) 234 5678</p>
+                </div>
+                <div style="margin-bottom: 10px;">
+                    <p><strong>Dirección:</strong></p>
+                    <p>Calle Ejemplo 123, Ciudad Juárez, Chihuahua</p>
+                </div>
+                <div style="margin-top: 10px;">
+            <p><strong>Redes Sociales:</strong></p>
+            <ul style="list-style: none; padding: 0; display: flex; justify-content: center; gap: 15px;">
+                <li><a href="https://www.facebook.com/planjuarez" target="_blank" style="color: #fff;">Facebook</a></li>
+                <li><a href="https://x.com/planjuarez" target="_blank" style="color: #fff;">Twitter (X)</a></li>
+                <li><a href="https://www.instagram.com/planjuarez" target="_blank" style="color: #fff;">Instagram</a></li>
+                <li><a href="https://www.youtube.com/c/PlanEstrategicodeJuarezAC" target="_blank" style="color: #fff;">YouTube</a></li>
+            </ul>
+        </div>
+            </div>
+        </section>
+    </footer>
+
+    <div class="image-popup" id="image-popup">
+        <button class="close-btn" onclick="closeImage()">×</button>
+        <img src="" alt="Imagen expandida" id="popup-image">
+    </div>
+
+    <script>
+        function openImage(src) {
+            document.getElementById("popup-image").src = src;
+            document.getElementById("image-popup").style.display = "flex";
+        }
+
+        function closeImage() {
+            document.getElementById("image-popup").style.display = "none";
+        }
+    </script>
+</body>
+
+</html>
+

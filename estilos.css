@@ -1,0 +1,135 @@
+/* Importación de fuentes */
+body {
+    font-family: 'Roboto', 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* Estilos del header */
+header {
+    background-color: #004080;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Portada */
+#portada {
+    text-align: center;
+    padding: 40px;
+    background-color: #e6f2ff;
+}
+
+#portada video {
+    max-width: 100%;
+    border: 5px solid #ccc;
+    border-radius: 10px;
+}
+
+/* Programas */
+#programas {
+    text-align: center; /* Centra el texto "Nuestros Programas" */
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+#programas h2 {
+    margin-bottom: 20px; /* Asegura espacio debajo del título */
+}
+
+.programa {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra el contenido en el marco */
+    justify-content: center;
+    width: auto; /* Ajusta el tamaño del marco al contenido */
+    max-width: 23%; /* Limita el ancho máximo de las tarjetas */
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+}
+
+.programa img {
+    max-width: 100%; /* Las imágenes ocupan todo el ancho disponible */
+    height: auto; /* Mantiene las proporciones originales */
+    border-radius: 10px;
+    margin-bottom: 10px;
+    display: block; /* Evita espacios blancos adicionales */
+}
+
+.programas-contenido {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Espacia las tarjetas de manera uniforme */
+    gap: 20px; /* Agrega espacio entre tarjetas */
+    padding: 20px;
+}
+
+}
+
+.programa h3 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.programa p {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+/* Donaciones */
+#donaciones {
+    text-align: center;
+    padding: 40px;
+    background-color: #004080;
+    color: #fff;
+}
+
+#donaciones button {
+    background-color: #008cba;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    border-radius: 5px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+form input, form textarea, form button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
