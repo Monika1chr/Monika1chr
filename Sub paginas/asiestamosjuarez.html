@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Así Estamos Juárez</title>
+    <title>YoCiudadano</title>
     <style>
         * {
             margin: 0;
@@ -12,35 +12,30 @@
         }
 
         body {
-            font-family: 'Roboto', sans-serif;
-            background-color: #f9f9f9;
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f7fa;
             color: #333;
             line-height: 1.6;
-            display: flex;
-            justify-content: center;
-        }
-
-        .container {
-            width: 960px;
-            max-width: 100%;
-            padding: 0 20px;
         }
 
         header {
-            background-color: #005a5b;
+            background-color: #003c42;
             color: #fff;
             padding: 20px 0;
             text-align: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
 
         header h1 {
             font-size: 2.5rem;
-            font-family: 'Montserrat', sans-serif;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+            letter-spacing: 2px;
         }
 
         nav {
-            background-color: #003838;
-            padding: 10px 0;
+            background-color: #005a5b;
+            padding: 15px 0;
             text-align: center;
         }
 
@@ -48,18 +43,20 @@
             list-style: none;
             display: flex;
             justify-content: center;
+            margin: 0;
         }
 
         nav ul li {
-            margin: 0 15px;
+            margin: 0 20px;
         }
 
         nav ul li a {
             color: #fff;
             text-decoration: none;
-            font-size: 1rem;
-            font-weight: bold;
+            font-size: 1.1rem;
+            font-weight: 500;
             text-transform: uppercase;
+            transition: color 0.3s ease-in-out;
         }
 
         nav ul li a:hover {
@@ -67,43 +64,53 @@
         }
 
         main {
-            padding: 40px 0;
+            padding: 50px 20px;
         }
 
         #contenido {
-            max-width: 900px;
+            max-width: 1100px;
             margin: 0 auto;
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
         }
 
         h2 {
-            font-size: 1.8rem;
-            font-family: 'Montserrat', sans-serif;
+            font-size: 2rem;
+            font-family: 'Roboto', sans-serif;
             color: #005a5b;
             margin-bottom: 20px;
+            font-weight: 600;
         }
 
         h3 {
-            font-size: 1.5rem;
+            font-size: 1.6rem;
             color: #003838;
             margin-top: 30px;
-            margin-bottom: 10px;
+            margin-bottom: 15px;
+            font-weight: 600;
         }
 
         p {
-            font-size: 1rem;
+            font-size: 1.1rem;
+            color: #555;
             margin-bottom: 20px;
             line-height: 1.8;
             text-align: justify;
         }
 
         footer {
-            background-color: #005a5b;
+            background-color: #003c42;
             color: #fff;
             text-align: center;
-            padding: 10px 0;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
+            padding: 15px 0;
+            margin-top: 50px;
+            box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        footer p {
+            font-size: 1rem;
         }
 
         @media (max-width: 768px) {
@@ -119,53 +126,63 @@
                 margin: 10px 0;
             }
 
+            #contenido {
+                padding: 20px;
+            }
+
             h2 {
-                font-size: 1.5rem;
+                font-size: 1.6rem;
             }
 
             h3 {
-                font-size: 1.3rem;
+                font-size: 1.4rem;
             }
 
             p {
-                font-size: 0.9rem;
+                font-size: 1rem;
             }
         }
     </style>
 </head>
 <body>
 
-    <div class="container">
+    <nav>
+        <ul>
+            <li><a href="../index.html">Inicio</a></li>
+        </ul>
+    </nav>
 
-        <nav>
+    <header>
+        <h1>Red de Vecinos de Juárez</h1>
+    </header>
+
+    <main>
+        <section id="contenido">
+            <h2>Personas en todo Juárez participando por una mejor ciudad</h2>
+            <p>En 2012, Plan Estratégico de Juárez puso en marcha este proyecto para promover la participación ciudadana desde un enfoque comunitario.</p>
+            
+            <h3>Consideramos que la organización vecinal es una experiencia de debate y resolución de problemas públicos</h3>
+            <p>Puede ser detonante para la mejora de la calidad de vida. Es por eso que Red de Vecinos de Juárez apoya en la organización de comités, la vinculación de diversos comités entre sí, y como acompañamiento a grupos vecinales en procesos de gestión e incidencia ante el Gobierno Municipal.</p>
+
+            <h3>Objetivos</h3>
+            <p>Tenemos tres objetivos principales en Red de Vecinos de Juárez:</p>
             <ul>
-                <li><a href="../Pagina%20Principal.html">Inicio</a></li>
+                <li>Fomentar y fortalecer la participación vecinal.</li>
+                <li>Proponer soluciones para nuestra ciudad.</li>
+                <li>Incidir en la toma de decisiones en la ciudad.</li>
             </ul>
-        </nav>
 
-        <header>
-            <h1>Así Estamos Juárez</h1>
-        </header>
+            <h3>¿Cómo se conforma la red?</h3>
+            <p>La Red de Vecinos de Juárez está compuesta por distintos comités vecinales de las diferentes zonas de la ciudad, que trabajan de manera articulada para resolver problemas comunes, o apoyar en la resolución de problemas de otros sectores.</p>
 
-        <main>
-            <section id="contenido">
-                <h2>En Así Estamos Juárez medimos la calidad de vida en Juárez para saber en dónde estamos y saber hacia dónde queremos ir.</h2>
-                <p>Lo que no se mide no se puede conocer, lo que no se conoce no se puede mejorar. Con Así Estamos Juárez, tenemos como objetivo medir la calidad de vida en Ciudad Juárez, para que sociedad y gobierno sepamos en dónde estamos, definamos hacia dónde queremos ir, y qué cosas hay que hacer para llegar a ese destino como ciudad.</p>
+            <h3>¿Tiene algún costo?</h3>
+            <p>Todos los servicios ofrecidos por Red de Vecinos de Juárez son completamente gratuitos.</p>
+        </section>
+    </main>
 
-                <h3>Un panel de indicadores sin comparación</h3>
-                <p>Recopilamos los principales datos de la ciudad por categorías en un panel de indicadores de calidad de vida. Para este panel, contamos con información histórica de las diversas fuentes oficiales, además de datos de percepción a través de las encuestas Así Estamos Juárez.</p>
-
-                <h3>Informes periódicos de la situación en Juárez</h3>
-                <p>Cada año publicamos una serie de informes temáticos sobre nuestra ciudad, con los datos más actualizados y acompañados del análisis de Plan Estratégico de Juárez.</p>
-            </section>
-        </main>
-
-        <footer>
-            <p>&copy; 2024 Plan Estratégico de Juárez. Todos los derechos reservados.</p>
-        </footer>
-
-    </div>
+    <footer>
+        <p>&copy; 2024 Red de Vecinos de Juárez. Todos los derechos reservados.</p>
+    </footer>
 
 </body>
 </html>
-
